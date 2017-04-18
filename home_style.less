@@ -1,0 +1,424 @@
+@import "styles/reset.css";
+@import "styles/whole.less";
+@import "styles/layout.less";
+@import "module/grid/grid_style.less";
+
+@keyframes ma {
+  0%, 20% {
+    margin-left: 0;
+  }
+  30%, 50% {
+    margin-left: -100%;
+  }
+  55%, 75% {
+    margin-left: -200%;
+  }
+  80%, 100% {
+    margin-left: -300%;
+  }
+}
+
+@pw: 340px;
+@word-width: 150px;
+
+body {
+  main {
+    background-color: #fafafa;
+    /* 轮播图 */
+    .frame {
+      width: 100%;
+      height: 31.23vw;
+      .oh;
+      .photos {
+        .df-jc-fs;
+        .pr;
+        width: 400%;
+        animation: ma 15s infinite alternate;
+        .every-bg-img {
+          width: 100%;
+          height: 31.23vw;
+          img {
+            .pa;
+            width: 100%;
+            height: 31.23vw;
+          }
+          .text {
+            .pa;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 15vw;
+            .white-c;
+            .up-text {
+              margin-left: 14vw;
+              font-size: 3vw;
+            }
+            .down-text {
+              font-size: 4vw;
+            }
+          }
+        }
+      }
+    }
+
+    /* 关键词模块 */
+    .con-word {
+      margin-top: 50px;
+      .padding-lr;
+      width: calc(~"100% - @{pw}");
+      .oh;
+      .row-word {
+        .oh;
+        .every-col-word {
+          box-sizing: border-box;
+          .tac;
+          padding-bottom: 20px;
+          .word {
+            box-sizing: border-box;
+            .dib;
+            margin-top: 10px;
+            height: 145px;
+            .word-title {
+              .tac;
+              width: @word-width;
+              height: 80px;
+              line-height: 130px;
+              .fs16;
+            }
+            .word-high {
+              background: url(images/home_page_rocket.png) no-repeat;
+              background-size: 30px 40px;
+              background-position: 60px 0px;
+            }
+            .word-norm {
+              background: url(images/home_page_archive.png) no-repeat;
+              background-size: 45px 40px;
+              background-position: 52px 0px;
+            }
+            .word-connection {
+              background: url(images/home_page_connection.png) no-repeat;
+              background-size: 40px 40px;
+              background-position: 56px 0px;
+            }
+            .word-content {
+              margin-top: 10px;
+              width: @word-width;
+              .grey-c;
+              .fs12;
+            }
+          }
+        }
+        .every-col-3 {
+          border-right: 1px dashed #dedede;
+        }
+        .stu-mini-info {
+          .stu-num-word {
+            margin-top: 34px;
+            div {
+              margin-left: 20px;
+              margin-top: 7px;
+            }
+            .stu-num {
+              span {
+                .fs14;
+                .green-c;
+                padding-top: 14px;
+                background: url(images/home_page_person_num_icon.png) no-repeat;
+                background-size: 10px;
+                background-position: 0 18px;
+              }
+            }
+
+            @media screen and (max-width: 768px) {
+              div {
+                .tac;
+              }
+
+            }
+            .stu-text {
+              .fs14;
+              .grey-c;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .con-word {
+        .padding0;
+        .w100;
+      }
+    }
+
+    /* 学习步骤模块 */
+    .module-title {
+      .tac;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .fs14;
+      font-weight: 600;
+    }
+    .con-step {
+      .padding-lr;
+      width: calc(~"100% - @{pw}");
+      .oh;
+      .row-step {
+        .oh;
+        .every-col-step {
+          .df-jc;
+          margin: 10px 0;
+          .step {
+            //border: solid;
+            .df-ac;
+            //width: 182px;
+            .arrow {
+              //border: solid;
+              .dib;
+              width: 16px;
+              height: 14px;
+              background: url(images/home_page_howtolearn_arrow.png) no-repeat;
+              background-size: 16px 14px;
+            }
+            .step-num {
+              //border: solid;
+              .dib;
+              .tac;
+              margin-left: 5px;
+              width: 32px;
+              height: 32px;
+              line-height: 32px;
+              .green-c;
+              .bgc-white;
+              border: none;
+              border-radius: 50%;
+              box-shadow: 1px 1px 1px #e6e6e6;
+            }
+            .step-info {
+              //border: solid;
+              .dib;
+              margin-left: 5px;
+              width: 112px;
+              .fs10;
+              color: #999999;
+            }
+          }
+        }
+        @media screen and (max-width: 768px) {
+          .every-col-step {
+            .df-jc;
+            .step {
+              .arrow {
+                .dn;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .con-step {
+        .padding0;
+        .w100;
+      }
+    }
+
+    /* 优秀学员展示 */
+    .con-good-stu {
+      .padding-lr;
+      width: calc(~"100% - @{pw}");
+      .oh;
+      .row-good-stu {
+        .oh;
+        .every-col-good-stu {
+          .df-jc;
+          .stu {
+            //border: solid;
+            .tac;
+            margin: 10px 0;
+            padding: 14px;
+            width: 128px;
+            .bgc-white;
+            border: 1px solid #eeeded;
+            border-radius: 3px;
+            .dib;
+            .stu-name {
+              //border: solid;
+              .dib;
+              width: 96px;
+              height: 115px;
+              line-height: 200px;
+              .fs12;
+              font-weight: 600;
+            }
+            .stu-name1 {
+              background: url(images/home_page_student1.png) no-repeat;
+              background-size: 78px;
+              background-position: 8px 0px;
+            }
+            .stu-name2 {
+              background: url(images/home_page_student2.png) no-repeat;
+              background-size: 78px;
+              background-position: 8px 0px;
+            }
+            .stu-name3 {
+              background: url(images/home_page_student3.png) no-repeat;
+              background-size: 78px;
+              background-position: 8px 0px;
+            }
+            .stu-name4 {
+              background: url(images/home_page_student4.png) no-repeat;
+              background-size: 78px;
+              background-position: 8px 0px;
+            }
+            .stu-intro {
+              //border: solid;
+              .dib;
+              .fs10;
+              .grey-c;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .con-good-stu {
+        .padding0;
+        .w100;
+      }
+    }
+
+    /* 战略合作企业 */
+    #bundle {
+      .company-hb() {
+        box-sizing: border-box;
+        border-top: 1px solid #f6f6f6;
+        border-bottom: 1px solid #f6f6f6;
+      }
+      .company-hv() {
+        position: relative;
+        z-index: 999999;
+        -webkit-box-shadow: -5px 0 15px #f1f1f1,
+        5px 0 15px #f1f1f1,
+          0 -5px 15px #f1f1f1,
+        0 5px 15px #f1f1f1;
+        -moz-box-shadow: -5px 0 15px #f1f1f1,
+        5px 0 15px #f1f1f1,
+          0 -5px 15px #f1f1f1,
+        0 5px 15px #f1f1f1;
+        box-shadow: -5px 0 15px #f1f1f1,
+        5px 0 15px #f1f1f1,
+          0 -5px 15px #f1f1f1,
+        0 5px 15px #f1f1f1;
+      }
+    }
+    .con-work-together {
+      .padding-lr;
+      .oh;
+      width: calc(~"100% - @{pw}");
+      .row-work-together{
+        height: 110px;
+        .every-col-work-together{
+          width: 20%;
+          .single-company{
+            .dib;
+            margin-top: 9px;
+            margin-bottom: 9px;
+            width: 100%;
+            height: 100px;
+          }
+          .single-company:hover {
+            #bundle > .company-hv;
+            .bgc-white;
+          }
+          .company-alibaba{
+            background: url(images/home_page_alibaba.png) no-repeat;
+            background-size: 13vw;
+            background-position: center center;
+            .bgc-white;
+          }
+          .company-jinshan{
+            background: url(images/home_page_jinshan.png) no-repeat;
+            background-size: 5vw;
+            background-position: center center;
+            .bgc-white;
+          }
+          .company-huanxin{
+            background: url(images/home_page_huanxin.png) no-repeat;
+            background-size: 10vw;
+            background-position: center center;
+            .bgc-white;
+          }
+          .company-ronglian{
+            background: url(images/home_page_ronglian.png) no-repeat;
+            background-size: 13vw;
+            background-position: center center;
+            .bgc-white;
+          }
+          .company-qiniu{
+            background: url(images/home_page_qiniu.png) no-repeat;
+            background-size: 10vw 7vw;
+            background-position: center center;
+            .bgc-white;
+          }
+
+        }
+
+        @media screen and (max-width: 768px){
+            .every-col-work-together{
+              .tac;
+              width: 100%;
+              .single-company{
+                width: 20%;
+              }
+            }
+        }
+      }
+
+    }
+    @media screen and (max-width: 992px) {
+      .con-work-together {
+        .padding0;
+        .w100;
+      }
+    }
+
+    /* 友情链接 */
+    .con-friendlink{
+      .padding-lr;
+      width: calc(~"100% - @{pw}");
+      .bgc-white;
+      .oh;
+      .row-friendlink{
+        padding-bottom: 10px;
+        .oh;
+        .col-friendlink{
+          .tac;
+          width: 10%;
+          a{
+            .grey-c;
+            text-decoration: none;
+          }
+        }
+        @media screen and (max-width: 768px){
+          .col-friendlink{
+            width: 50%;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 992px){
+      .con-friendlink{
+        .padding0;
+        .w100;
+      }
+    }
+    .friendlink-title{
+      margin-bottom: 0;
+      padding: 20px 0;
+      .bgc-white;
+    }
+  }
+}
+
+
+
+

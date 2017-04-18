@@ -1,0 +1,126 @@
+@import "../../styles/whole.less";
+@import "../../styles/layout.less";
+header{
+  .contact {
+    .df-ac-js;
+    .padding-lr;
+    .phone{
+      .fs14;
+      .green-c;
+    }
+    .cont-icon{
+      img{
+        width: 26px;
+      }
+    }
+  }
+  @media screen and (max-width: 992px){
+    .contact{
+      .padding0;
+    }
+  }
+  //@media screen and (max-width: 768px){
+  //  .contact{
+  //    .padding0;
+  //  }
+  //}
+  .nav{
+    .df-ac-js;
+    .padding-lr;
+    height: 65px;
+    .bgc-green;
+    .logo{
+      .white-c;
+      .logo-name{
+        .dib;
+        .fs35;
+      }
+      .logo-site{
+        .tac;
+        .fs14;
+      }
+    }
+    .menu{
+      ul{
+        li{
+          .dib;
+          padding-left: 14px;
+          padding-right: 14px;
+          height: 63px;
+          line-height: 63px;
+          .fs16;
+          border-bottom: 2px solid transparent;
+          .nav-a{
+            .white-c;
+            text-decoration: none;
+          }
+        }
+        li:hover{
+          border-bottom: 2px solid #ffffff;
+        }
+        .open{
+          .dn;
+          button{
+            .bgc-green;
+            border: none;
+            .btn-icon{
+              width: 25px;
+              height: 21px;
+              div{
+                margin-top: 6px;
+                width: 25px;
+                height: 3px;
+                background-color: #1B7851;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px){
+    .nav{
+      .padding0;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .nav{
+      //.padding0;
+      .menu{
+        ul{
+          li{
+            .dn;
+          }
+          .open{
+            display: inline-block;
+          }
+          .open:hover{
+            border-bottom: 2px solid transparent;
+          }
+        }
+      }
+    }
+
+  }
+  .ver-menu{
+    .dn;
+    ul{
+      li{
+        .tac;
+        height: 27px;
+        .fs16;
+        .bgc-green;
+        .ver-a{
+          .dib;
+          .white-c;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .ver-menu{
+      .dn;
+    }
+  }
+}

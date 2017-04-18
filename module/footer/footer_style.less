@@ -1,0 +1,64 @@
+@import "../../styles/whole.less";
+@import "../../styles/layout.less";
+
+footer{
+  padding-top: 20px;
+  .padding-lr;
+  .white-c;
+  .bgc-green;
+  .other{
+    display: flex;
+    justify-content: space-between;
+    div{
+      .o-title{
+        .fs14;
+      }
+    }
+    .con-us{
+      .dib;
+      vertical-align: top;
+      .o-con-site{
+        margin-top: 58px;
+        a{
+          .fs12;
+          .white-c;
+          text-decoration: none;
+        }
+      }
+    }
+    .other-page{
+      ul{
+        margin-top: 20px;
+        li{
+          .dib;
+          a{
+            .white-c;
+            .fs12;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .QRcode{
+      img{
+        width: 84px;
+      }
+    }
+  }
+  .record{
+    .tac;
+    .fs10;
+  }
+}
+@media screen and (max-width: 992px){
+  footer{
+    .padding0;
+  }
+}
+@media screen and (max-width: 768px){
+  footer{
+    .other{
+      flex-direction: column;
+    }
+  }
+}

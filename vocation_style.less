@@ -1,0 +1,313 @@
+@import "styles/reset.css";
+@import "styles/whole.less";
+@import "styles/layout.less";
+@import "module/grid/grid_style.less";
+
+@pw: 340px;
+#bundle {
+  .con() {
+    .padding-lr;
+    width: calc(~"100% - @{pw}");
+    .oh;
+  }
+  .con-max992() {
+    .padding0;
+    .w100;
+  }
+  .margin-lr() {
+    margin-left: 170px;
+    margin-right: 170px;
+  }
+  .margin0() {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+body {
+  main {
+    background-color: #fafafa;
+    /* 首页>职业 */
+    .this-is-home {
+      #bundle > .margin-lr;
+      width: calc(~"100% - @{pw}");
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .fs14;
+      border-bottom: 1px solid #d0d6d9;
+      .voc-green {
+        .green-c;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .this-is-home {
+        #bundle > .margin0;
+        .w100;
+      }
+    }
+
+    /* 方向 */
+    .voc-list {
+      #bundle > .margin-lr;
+      width: calc(~"100% - @{pw}");
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #edf1f2;
+      .oh;
+      ul {
+        li {
+          margin-right: 15px;
+          .fl;
+          a {
+            .fs14;
+            text-decoration: none;
+          }
+          .direction {
+            color: #999999;
+          }
+          .all{
+            .white-c;
+            .bgc-green;
+          }
+          .all-voc{
+            .black-c;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .voc-list {
+        #bundle > .margin0;
+        .w100;
+      }
+    }
+
+    /* 前端开发方向 */
+    .direction-title{
+      #bundle > .margin-lr;
+      width: calc(~"100% - @{pw}");
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .fs14;
+      border-bottom: 1px solid #d0d6d9;
+    }
+    @media screen and (max-width: 992px){
+      .direction-title{
+        #bundle > .margin0;
+        .w100;
+      }
+    }
+    @media screen and (max-width: 768px){
+      .direction-title{
+        .tac;
+      }
+    }
+    .con-voc{
+      #bundle > .margin-lr;
+      margin-top: 30px;
+      width: calc(~"100% - @{pw}");
+      .oh;
+      .row-voc{
+        .col-voc{
+          border: solid transparent;
+          box-sizing: border-box;
+          padding-left: 2px;
+          padding-right: 2px;
+          #bundle{
+            .border-t(){
+              border-top: 1px solid #eeeded;
+            }
+            .border-b(){
+              border-bottom: 1px solid #eeeded;
+            }
+            .border-l(){
+              border-left: 1px solid #eeeded;
+            }
+            .border-r(){
+              border-right: 1px solid #eeeded;
+            }
+          }
+          .whole-vocation{
+            .pr;
+            margin-bottom: 15px;
+            .bgc-white;
+            .hover-bg{
+              .pa;
+              visibility: hidden;
+
+            }
+            .v-title{
+              .df-jc-fs;
+              padding: 6px;
+              height: auto;
+              min-height: 68px;
+              #bundle > .border-t;
+              #bundle > .border-b;
+              #bundle > .border-l;
+              #bundle > .border-r;
+              img{
+                margin-right: 5px;
+                width: 67px;
+                height: 67px;
+              }
+              .t-text{
+                .dib;
+                width: 71%;
+                .t-word{
+                  .fs12;
+                  font-weight: 600;
+                }
+                .t-info{
+                  .fs10;
+                  .wb-b;
+                }
+              }
+            }
+            .job-diff{
+              overflow: hidden;
+              ul{
+                li{
+                  #bundle > .border-b;
+                  box-sizing: border-box;
+                  .dib;
+                  .fl;
+                  padding: 6px;
+                  width: 50%;
+                  .fs08;
+                  .grey-c;
+                }
+                .sill{
+                  background: url(images/vocation_star.png) no-repeat;
+                  background-size: 13px ;
+                  background-position: 33px 6px;
+                  #bundle > .border-l;
+                  #bundle > .border-r;
+                }
+                .difficulty{
+                  background: url(images/vocation_star.png) no-repeat,url(images/vocation_star.png) no-repeat;
+                  background-size: 13px ;
+                  background-position: 50px 6px,67px 6px;
+                  #bundle > .border-r;
+                }
+                .growth{
+                  #bundle > .border-l;
+                  #bundle > .border-r;
+                  span{
+                    .black-c;
+                  }
+                  .num{
+                    .red-c;
+                  }
+                }
+                .rare{
+                  #bundle > .border-r;
+                  span{
+                    .black-c;
+                  }
+                  .num{
+                    .red-c;
+                  }
+                }
+              }
+            }
+            .salary-whole{
+              .df-jc-fs;
+              .fs08;
+              div{
+                .df-ajc;
+                width: 35%;
+                height: 72px;
+                .grey-c;
+                #bundle > .border-l;
+                #bundle > .border-r;
+                #bundle > .border-b;
+                box-sizing: border-box;
+              }
+              .salary{
+                width: 65%;
+                li{
+                  .df-ac;
+                  justify-content: space-between;
+                  width: 100%;
+                  height: 24px;
+                  #bundle > .border-r;
+                  #bundle > .border-b;
+                  box-sizing: border-box;
+                  .work-year{
+                    margin-left: 6px;
+                  }
+                  .salary-mon{
+                    margin-right: 6px;
+                  }
+                }
+
+              }
+            }
+            .learn-num{
+              .df-ac;
+              height: 21px;
+              .fs10;
+              font-weight: 600;
+              padding-left: 5px;
+              box-sizing: border-box;
+              #bundle > .border-l;
+              #bundle > .border-r;
+              #bundle > .border-b;
+              span{
+                .red-c;
+              }
+            }
+            .mini-hint{
+              .df-ac;
+              padding-left: 6px;
+              padding-right: 6px;
+              height: auto;
+              min-height: 21px;
+              .fs08;
+              .grey-c;
+              #bundle > .border-l;
+              #bundle > .border-r;
+              #bundle > .border-b;
+            }
+          }
+          @media screen and (max-width: 768px){
+            .whole-vocation{
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 10px;
+              width: 260px;
+            }
+          }
+          .whole-vocation:hover .hover-bg{
+            .pa;
+            width: 100%;
+            height: 100%;
+            .white-c;
+            visibility: visible;
+            background: url(images/vocation_hover_bg.png) no-repeat;
+            background-size: 100% 100%;
+            opacity: .8;
+            .hover-title{
+              .tac;
+              margin-top: 20px;
+              .fs14;
+            }
+            .hover-content{
+              margin: 10px 20px 20px;
+              .fs10;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 992px){
+      .con-voc{
+        #bundle > .margin0;
+        .w100;
+      }
+    }
+    .last-con{
+      padding-bottom: 150px;
+    }
+  }
+}

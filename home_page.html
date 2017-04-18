@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet/less" type="text/css" href="style.less" charset="UTF-8">
+    <link rel="stylesheet/less" type="text/css" href="home_style.less" charset="UTF-8">
+    <link rel="stylesheet/less" type="text/css" href="module/grid/grid_style.less" charset="UTF-8">
+    <script type="text/javascript" src="less.min.js"></script>
+    <script type="text/javascript">
+        window.onresize = function () {
+            var c_width = document.documentElement.clientWidth;
+            if (c_width > 768) {
+                document.getElementById("vm").style.display = "none";
+            }
+        }
+        function cMenu() {
+            var obj = document.getElementById("vm").style.display;
+            if (obj == "none") {
+                document.getElementById("vm").style.display = "block";
+                document.getElementById("nav-id").style.borderBottom = "1px solid #ffffff";
+            }
+            else {
+                document.getElementById("vm").style.display = "none";
+            }
+        }
+    </script>
+    <title>首页</title>
+</head>
+<body>
+<header>
+    <div class="contact">
+        <span class="phone">客服热线：010-594-78634</span>
+        <div class="cont-icon">
+            <img src="images/home_page_weixin.png">
+            <img src="images/home_page_qq.png">
+            <img src="images/home_page_weibo.png">
+        </div>
+    </div>
+    <div class="nav" id="nav-id">
+        <div class="logo">
+            <div class="logo-name">技能树</div>
+            <div class="logo-site">www.jnshu.com</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="open" id="open-li">
+                    <button type="button" onclick="cMenu()">
+                        <div class="btn-icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </button>
+                </li>
+                <li><a href="#" class="nav-a">首页</a></li>
+                <li><a href="vocation_recommand.html" class="nav-a">职业</a></li>
+                <li><a href="company.html" class="nav-a">推荐</a></li>
+                <li><a href="#" class="nav-a">关于</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ver-menu" id="vm">
+        <ul>
+            <li><a href="#" class="ver-a">首页</a></li>
+            <li><a href="vocation_recommand.html" class="ver-a">职业</a></li>
+            <li><a href="company.html" class="ver-a">推荐</a></li>
+            <li><a href="#" class="ver-a">关于</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <!-- 轮播图 -->
+    <div class="frame">
+        <div class="photos">
+            <div class="every-bg-img">
+                <img src="images/home_page_bg_icon.png">
+                <div class="text">
+                    <div class="up-text">作为你一个初级菜鸟，你是否想要了解</div>
+                    <div class="down-text">50万年薪的程序员,都会哪些技能呢？</div>
+                </div>
+            </div>
+            <div class="every-bg-img">
+                <img src="images/home_page_bg_icon.png">
+                <div class="text">
+                    <div class="up-text">作为你一个初级菜鸟，你是否想要了解</div>
+                    <div class="down-text">50万年薪的程序员,都会哪些技能呢？</div>
+                </div>
+            </div>
+            <div class="every-bg-img">
+                <img src="images/home_page_bg_icon.png">
+                <div class="text">
+                    <div class="up-text">作为你一个初级菜鸟，你是否想要了解</div>
+                    <div class="down-text">50万年薪的程序员,都会哪些技能呢？</div>
+                </div>
+            </div>
+            <div class="every-bg-img">
+                <img src="images/home_page_bg_icon.png">
+                <div class="text">
+                    <div class="up-text">作为你一个初级菜鸟，你是否想要了解</div>
+                    <div class="down-text">50万年薪的程序员,都会哪些技能呢？</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关键词模块 -->
+    <div class="container con-word">
+        <div class="row row-word">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-word">
+                <div class="word">
+                    <div class="word-title word-high">高效</div>
+                    <div class="word-content">将五到七年的成长时间，缩短到一年到三年。
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-word">
+                <div class="word">
+                    <div class="word-title word-norm">规范</div>
+                    <div class="word-content">标准的实战教程，不会走弯路。
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-word every-col-3">
+                <div class="word">
+                    <div class="word-title word-connection">人脉</div>
+                    <div class="word-content">同班好友，同院学长，技术大师，
+                        入学就混入职脉圈，为以后铺平
+                        道路。
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 stu-mini-info">
+                <div class="stu-num-word">
+                    <div class="stu-num">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;12400</span>
+                    </div>
+                    <div class="stu-text">累计在线学习人数</div>
+                    <div class="stu-num">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;12400</span>
+                    </div>
+                    <div class="stu-text">学员已找到满意工作</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 学习步骤模块 -->
+    <div class="module-title">如何学习</div>
+    <div class="container con-step">
+        <div class="row row-step">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-step">
+                <div class="step">
+                    <!--<div class="arrow"></div>-->
+                    <div class="step-num">1</div>
+                    <div class="step-info">匹配你现在的个人情况
+                        寻找适合自己的岗位
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-step">
+                <div class="step">
+                    <div class="arrow"></div>
+                    <div class="step-num">2</div>
+                    <div class="step-info">了解职业前景薪金待遇、竞争压力等</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-step">
+                <div class="step">
+                    <div class="arrow"></div>
+                    <div class="step-num">3</div>
+                    <div class="step-info">掌握行业内顶级技能</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-step">
+                <div class="step">
+                    <div class="arrow"></div>
+                    <div class="step-num">4</div>
+                    <div class="step-info">查看职业目标任务</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container con-step">
+        <div class="row row-step">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-step">
+                <div class="step">
+                    <!--<div class="arrow"></div>-->
+                    <div class="step-num">5</div>
+                    <div class="step-info">参考学习资源，掌握
+                        技能点，逐个完成任务
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-step">
+                <div class="step">
+                    <div class="arrow"></div>
+                    <div class="step-num">6</div>
+                    <div class="step-info">加入班级，和小伙伴们
+                        互帮互助，一块学习
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-step">
+                <div class="step">
+                    <div class="arrow"></div>
+                    <div class="step-num">7</div>
+                    <div class="step-info">选择导师，一路引导，
+                        加速自己成长
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-step">
+                <div class="step">
+                    <div class="arrow"></div>
+                    <div class="step-num">8</div>
+                    <div class="step-info">完成职业技能，升
+                        级业界大牛
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 优秀学员展示 -->
+    <div class="module-title">优秀学员展示</div>
+    <div class="container con-good-stu">
+        <div class="row row-good-stu">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-good-stu">
+                <div class="stu">
+                    <div class="stu-name stu-name1">技术顾问：罗大佑</div>
+                    <div class="stu-intro">百度技术总监：互联网基础
+                        服务领域，从事虚拟主机、
+                        云服务器、域名。曾任新网
+                        高级技术经理，负责技术研
+                        发、团队管理与建设。
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-good-stu">
+                <div class="stu">
+                    <div class="stu-name stu-name2">技术顾问：罗大佑</div>
+                    <div class="stu-intro">百度技术总监：互联网基础
+                        服务领域，从事虚拟主机、
+                        云服务器、域名。曾任新网
+                        高级技术经理，负责技术研
+                        发、团队管理与建设。
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-good-stu">
+                <div class="stu">
+                    <div class="stu-name stu-name3">技术顾问：罗大佑</div>
+                    <div class="stu-intro">百度技术总监：互联网基础
+                        服务领域，从事虚拟主机、
+                        云服务器、域名。曾任新网
+                        高级技术经理，负责技术研
+                        发、团队管理与建设。
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 every-col-good-stu">
+                <div class="stu">
+                    <div class="stu-name stu-name4">技术顾问：罗大佑</div>
+                    <div class="stu-intro">百度技术总监：互联网基础
+                        服务领域，从事虚拟主机、
+                        云服务器、域名。曾任新网
+                        高级技术经理，负责技术研
+                        发、团队管理与建设。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 战略合作企业 -->
+    <div class="module-title">战略合作企业</div>
+    <div class="container con-work-together">
+        <div class="row row-work-together">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 every-col-work-together">
+                <div class="single-company company-alibaba"></div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 every-col-work-together">
+                <div class="single-company company-jinshan"></div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 every-col-work-together">
+                <div class="single-company company-huanxin"></div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 every-col-work-together">
+                <div class="single-company company-ronglian"></div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 every-col-work-together">
+                <div class="single-company company-qiniu"></div>
+            </div>
+            <!--<div class="clear-fix"></div>-->
+        </div>
+    </div>
+
+    <!-- 友情链接 -->
+    <div class="module-title friendlink-title">友情链接</div>
+    <div class="container con-friendlink">
+        <div class="row row-friendlink">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;手机软件</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;教师招聘</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;找工作</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;教师招聘</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;找工作</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;手机软件</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;教师招聘</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;手机软件</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;手机软件</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;找工作</a></div>
+        </div>
+        <div class="row row-friendlink">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;手机软件</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;教师招聘</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;找工作</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;教师招聘</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;找工作</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;手机软件</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;教师招聘</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;手机软件</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;手机软件</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 col-friendlink"><a href="#">&#8226&nbsp;找工作</a></div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="other">
+        <div class="con-us">
+            <div class="o-title">技能树 — 改变你我</div>
+            <div class="o-con-site"><a href="#" class="a">关于我们</a> | <a href="#" class="a">联系我们</a> | <a href="#" class="a">合作企业</a></div>
+        </div>
+        <div class="other-page">
+            <div class="o-title">旗下网站</div>
+            <ul>
+                <li><a href="#" class="a">草船云孵化器</a></li>
+                <li><a href="#" class="a">最强IT特训营</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="a">葡萄藤轻游戏</a></li>
+                <li><a href="#" class="a">桌游精灵</a></li>
+            </ul>
+        </div>
+        <div class="QRcode">
+            <div class="o-title">微信公众平台</div>
+            <img src="images/home_page_QRCode.png">
+        </div>
+    </div>
+    <div class="record">
+        Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号
+    </div>
+</footer>
+</body>
+</html>
